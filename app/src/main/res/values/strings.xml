@@ -22,4 +22,5 @@
     <string name="goal_difference_detail_team">Goals Difference : </string>
     <string name="back_button_contentDescription">for back to main menu</string>
     <string name="favorite_button_content_description">in case you want to favorite this team</string>
+    <string name="favorite_list_content_description">for unfavorite without opening detail</string>
 </resources>
