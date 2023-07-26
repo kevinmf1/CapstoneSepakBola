@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">CapstoneSepakBola</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="no_team">No</string>
+    <string name="no_value_team">1</string>
+    <string name="name_team">Team</string>
+    <string name="name_value_team">Manchester City</string>
+    <string name="point_team">Points</string>
+    <string name="point_value_team">100</string>
+    <string name="something_wrong">Something Wrong</string>
+    <string name="home">Home</string>
+    <string name="favorite">Favorite</string>
+    <string name="profile">Profile</string>
+    <string name="rank_detail_team">Rank : </string>
+    <string name="total_match_detail_team">Total match : </string>
+    <string name="total_win_detail_team">Total Win : </string>
+    <string name="total_draw_detail_team">Total Draw : </string>
+    <string name="total_lose_detail_team">Total Lose : </string>
+    <string name="goal_for_detail_team">Goals For : </string>
+    <string name="goal_against_detail_team">Goals Against : </string>
+    <string name="goal_difference_detail_team">Goals Difference : </string>
+    <string name="back_button_contentDescription">for back to main menu</string>
+    <string name="favorite_button_content_description">in case you want to favorite this team</string>
+</resources>

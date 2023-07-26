@@ -1,0 +1,14 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/action_home"
+        android:title="@string/home"
+        android:icon="@drawable/baseline_home_24" />
+    <item
+        android:id="@+id/action_favorite"
+        android:title="@string/favorite"
+        android:icon="@drawable/baseline_favorite_24" />
+    <item
+        android:id="@+id/action_profile"
+        android:title="@string/profile"
+        android:icon="@drawable/baseline_account_circle_24" />
+</menu>

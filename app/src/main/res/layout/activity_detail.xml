@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".detail.DetailActivity">
+
+    <ImageButton
+        android:id="@+id/back_from_detail"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="24dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="@string/back_button_contentDescription"
+        android:src="@drawable/baseline_arrow_back_24"
+        app:layout_constraintBottom_toBottomOf="@+id/detail_team_name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/detail_team_name" />
+
+    <ImageButton
+        android:id="@+id/favorite_detail"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="24dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="@string/favorite_button_content_description"
+        android:src="@drawable/baseline_favorite_border_24"
+        app:layout_constraintBottom_toBottomOf="@+id/detail_team_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/detail_team_name" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/detail_team_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/name_value_team"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/detail_team_image"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:layout_marginTop="16dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/manchestercity"
+        app:layout_constraintEnd_toEndOf="@+id/detail_team_name"
+        app:layout_constraintStart_toStartOf="@+id/detail_team_name"
+        app:layout_constraintTop_toBottomOf="@+id/detail_team_name" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_rank"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/rank_detail_team"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/detail_team_image" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_rank_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="@string/no_value_team"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_rank"
+        app:layout_constraintStart_toEndOf="@+id/tv_rank"
+        app:layout_constraintTop_toTopOf="@+id/tv_rank" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_total_match"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/total_match_detail_team"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/tv_rank"
+        app:layout_constraintTop_toBottomOf="@+id/tv_rank" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_total_match_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/tv_total_match"
+        app:layout_constraintTop_toBottomOf="@+id/tv_rank"
+        tools:text="38" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_win_match"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/total_win_detail_team"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/tv_total_match"
+        app:layout_constraintTop_toBottomOf="@+id/tv_total_match" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_win_match_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/tv_win_match"
+        app:layout_constraintTop_toBottomOf="@+id/tv_total_match"
+        tools:text="30" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_draw_match"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/total_draw_detail_team"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/tv_win_match"
+        app:layout_constraintTop_toBottomOf="@+id/tv_win_match" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_draw_match_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/tv_draw_match"
+        app:layout_constraintTop_toBottomOf="@+id/tv_win_match"
+        tools:text="4" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_lose_match"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/total_lose_detail_team"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/tv_draw_match"
+        app:layout_constraintTop_toBottomOf="@+id/tv_draw_match" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_lose_match_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/tv_lose_match"
+        app:layout_constraintTop_toBottomOf="@+id/tv_draw_match"
+        tools:text="4" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_goal_for"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/goal_for_detail_team"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/tv_lose_match"
+        app:layout_constraintTop_toBottomOf="@+id/tv_lose_match" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_goal_for_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/tv_goal_for"
+        app:layout_constraintTop_toBottomOf="@+id/tv_lose_match"
+        tools:text="85" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_goal_against"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/goal_against_detail_team"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/tv_goal_for"
+        app:layout_constraintTop_toBottomOf="@+id/tv_goal_for" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_goal_against_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/tv_goal_against"
+        app:layout_constraintTop_toBottomOf="@+id/tv_goal_for"
+        tools:text="33" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_goal_difference"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/goal_difference_detail_team"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/tv_goal_against"
+        app:layout_constraintTop_toBottomOf="@+id/tv_goal_against" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_goal_difference_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/tv_goal_difference"
+        app:layout_constraintTop_toBottomOf="@+id/tv_goal_against"
+        tools:text="52" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
