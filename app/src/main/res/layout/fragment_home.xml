@@ -6,55 +6,14 @@
     android:layout_height="match_parent"
     tools:context=".home.HomeFragment">
 
-    <LinearLayout
-        android:background="@color/rank_main_color"
-        android:id="@+id/linearLayout"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:padding="16dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <com.google.android.material.textview.MaterialTextView
-            android:id="@+id/team_rank"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/no_team"
-            android:layout_weight="0.5"
-            android:textColor="@color/white"
-            android:textSize="20sp" />
-
-        <com.google.android.material.textview.MaterialTextView
-            android:id="@+id/team_name"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:gravity="center_horizontal"
-            android:layout_weight="10"
-            android:text="@string/name_team"
-            android:textColor="@color/white"
-            android:textSize="20sp" />
-
-        <com.google.android.material.textview.MaterialTextView
-            android:id="@+id/team_points"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="0.5"
-            android:text="@string/point_team"
-            android:textColor="@color/white"
-            android:textSize="20sp" />
-
-    </LinearLayout>
-
     <include
-        layout="@layout/team_rank"
+        layout="@layout/player_list"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ProgressBar
         android:id="@+id/progress_bar"

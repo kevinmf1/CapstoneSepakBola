@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">CapstoneSepakBola</string>
+    <!-- TODO: Hapus atau ubah teks placeholder ini -->
+    <string name="name_value_player">Kevin De Bruyne</string>
+    <string name="something_wrong">Terjadi Kesalahan</string>
+    <string name="home">Beranda</string>
+    <string name="favorite">Favorit</string>
+    <string name="profile">Profil</string>
+    <string name="setting">Pengaturan</string>
+    <string name="detail_team">Klub: </string>
+    <string name="detail_position">Posisi: </string>
+    <string name="detail_goals">Total Gol: </string>
+    <string name="detail_assist">Total Assist: </string>
+    <string name="detail_active">Pemain Aktif: </string>
+    <string name="detail_description">Deskripsi: </string>
+    <string name="back_button_contentDescription">untuk kembali ke menu utama</string>
+    <string name="favorite_button_content_description">jika ingin menandai sebagai favorit</string>
+    <string name="dark_theme">Tema Gelap</string>
+    <string name="enabled_dark_theme">Tema gelap diaktifkan</string>
+    <string name="language">Bahasa</string>
+    <string name="change_your_language">Ganti bahasa Anda</string>
+    <string name="change">Ubah</string>
+
+</resources>

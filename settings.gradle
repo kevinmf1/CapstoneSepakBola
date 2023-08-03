@@ -14,3 +14,6 @@ dependencyResolutionManagement {
 }
 rootProject.name = "CapstoneSepakBola"
 include ':app'
+include ':core'
+include ':profile'
+include ':favorite'

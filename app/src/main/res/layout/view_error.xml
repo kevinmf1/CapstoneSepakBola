@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <TextView
+    <com.google.android.material.textview.MaterialTextView
         android:id="@+id/tv_error"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -11,6 +11,7 @@
         android:layout_marginTop="4dp"
         android:gravity="center"
         android:text="@string/something_wrong"
-        android:textSize="18sp" />
+        android:textColor="@color/black"
+        android:textSize="20sp" />
 
 </RelativeLayout>

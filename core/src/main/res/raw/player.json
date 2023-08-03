@@ -1,0 +1,128 @@
+{
+  "error": false,
+  "message": "success",
+  "count": 10,
+  "data": [
+    {
+      "id": 1,
+      "name": "Kevin De Bruyne",
+      "club": "Manchester City",
+      "rate": 4.8,
+      "position": "AMF/CMF",
+      "allGoalUntilNow": 137,
+      "allAssistUntilNow": 223,
+      "activePlayer": "YES",
+      "description": "Kevin De Bruyne is a Belgian professional footballer who plays as a midfielder for Premier League club Manchester City and the Belgium national team. He is widely regarded as one of the best players in the world. Pundits have often described him as a \"complete footballer\". De Bruyne began his career at Genk, where he was a regular player when they won the 2010–11 Belgian Pro League. In 2012 he joined English club Chelsea, where he was used sparingly and then loaned to Werder Bremen. He signed with Wolfsburg for £18 million in 2014, where he established himself as one of the best players in the Bundesliga and was integral in the clubs 2014–15 DFB-Pokal win. In the summer of 2015 De Bruyne joined Manchester City for a club record £54 million. He has since won four Premier League titles, five League Cups and an FA Cup with the club. In 2017–18 he had a significant role in Manchester City record in becoming the only Premier League team to attain 100 points in a single season. In 2019–20, De Bruyne equalled the record for most assists in a Premier League season and was awarded Player of the Season (which he won again in 2021–22).",
+      "photo": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fcd398dc8-4a46-11ed-8176-c5c5e560820a.jpg?crop=1993%2C2491%2C872%2C0"
+    },
+    {
+      "id": 2,
+      "name": "Cristiano Ronaldo",
+      "club": "Al-Nassr",
+      "rate": 4.9,
+      "position": "CF/LWF",
+      "allGoalUntilNow": 709,
+      "allAssistUntilNow": 225,
+      "activePlayer": "YES",
+      "description": "Cristiano Ronaldo is a Portuguese professional footballer who is widely regarded as one of the greatest players of all time. He was born on February 5, 1985 on the island of Madeira and began his career at Sporting CP before moving to Manchester United in 2003. Ronaldo is known for his incredible goal-scoring ability, his skill on the ball, and his impressive physical attributes. He has won numerous individual awards throughout his career, including five Ballon dOr awards, and has also won multiple domestic and international titles with his club teams and the Portuguese national team. Ronaldo is also known for his philanthropic work, particularly in the areas of childhood hunger and poverty.",
+      "photo": "https://upload.wikimedia.org/wikipedia/commons/2/23/Cristiano_Ronaldo_WC2022_-_01.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Sergio Aguero",
+      "club": "-",
+      "rate": 4.8,
+      "position": "CF",
+      "allGoalUntilNow": 385,
+      "allAssistUntilNow": 119,
+      "activePlayer": "NO",
+      "description": "Sergio Aguero is an former Argentine professional footballer. He is widely regarded as one of the best goalscorers in the world, known for his pace, agility, and clinical finishing. Aguero began his career at Independiente in Argentina, before moving to Europe to play for Atletico Madrid and then Manchester City, where he became the clubs all-time leading scorer. Throughout his career, he has won numerous domestic and international titles, including several Premier League titles, FA Cups, and the UEFA Champions League. Aguero is also a prolific scorer for the Argentina national team, having helped lead them to the finals of the 2014 World Cup and the 2015 and 2016 Copa America tournaments. Despite facing injuries and setbacks throughout his career, Aguero remains a highly respected and influential figure in world football.",
+      "photo": "https://www.coachesvoice.com/wp-content/uploads/2021/09/AgueroMobile-1.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Ruben Dias",
+      "club": "Manchester City",
+      "rate": 4.7,
+      "position": "CB",
+      "allGoalUntilNow": 16,
+      "allAssistUntilNow": 13,
+      "activePlayer": "YES",
+      "description": "Ruben Dias is a Portuguese professional footballer who currently plays as a centre-back for Premier League club Manchester City and the Portugal national team. He is widely regarded as one of the best defenders in the world and has been praised for his solid defensive skills and leadership qualities. Dias began his career at Benfica, where he played for four years before joining Manchester City in 2020 for a transfer fee of £62 million. In his debut season, Dias played a key role in helping Manchester City win the Premier League and the Carabao Cup, and was named the Premier League Player of the Season.",
+      "photo": "https://i.pinimg.com/736x/18/e3/1f/18e31fc0480b3fbceea4ba0e2f05f3bb.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Lionel Messi",
+      "club": "Paris Saint Germain",
+      "rate": 5.0,
+      "position": "RWF/AMF",
+      "allGoalUntilNow": 705,
+      "allAssistUntilNow": 333,
+      "activePlayer": "YES",
+      "description": "Lionel Messi is an Argentine professional footballer who plays as a forward for Paris Saint-Germain and the Argentina national team. Widely regarded as one of the greatest football players of all time, Messi has won numerous awards and accolades throughout his career, including seven Ballon dOr titles. He spent the majority of his career playing for Barcelona, where he became the clubs all-time leading scorer and helped lead them to numerous domestic and international titles. Known for his incredible dribbling skills, speed, and scoring ability, Messi has been a dominant force in world football for over a decade.",
+      "photo": "https://elangnews.com/wp-content/uploads/2022/12/Lionel-Messi-12-jpg.webp"
+    },
+    {
+      "id": 6,
+      "name": "Erling Haaland",
+      "club": "Manchester City",
+      "rate": 4.8,
+      "position": "CF",
+      "allGoalUntilNow": 168,
+      "allAssistUntilNow": 40,
+      "activePlayer": "YES",
+      "description": "Erling Haaland is a Norwegian professional footballer who currently plays as a striker for German club Borussia Dortmund and the Norway national team. He is known for his incredible speed, strength, and finishing ability, and has quickly established himself as one of the best young players in the world.",
+      "photo": "https://kalimantanlive.com/wp-content/uploads/2023/05/Erling-Haaland-1.jpg"
+    },
+    {
+      "id": 7,
+      "name": "Kai Havertz",
+      "club": "Chelsea",
+      "rate": 4.5,
+      "position": "AMF",
+      "allGoalUntilNow": 103,
+      "allAssistUntilNow": 50,
+      "activePlayer": "NO",
+      "description": "Kai Havertz is a German professional footballer who plays as an attacking midfielder for English club Chelsea and the Germany national team. He is known for his exceptional technical skills, vision, and composure on the ball, and has been hailed as one of the most promising young talents in European football.",
+      "photo": "https://img.chelseafc.com/image/upload/f_auto,w_1440,c_fill,g_faces,q_90/editorial/news/2021/01/22/havertz-morecambe-fa-cup.jpg"
+    },
+    {
+      "id": 8,
+      "name": "Mario Gomez",
+      "club": "-",
+      "rate": 4.7,
+      "position": "CF",
+      "allGoalUntilNow": 319,
+      "allAssistUntilNow": 72,
+      "activePlayer": "NO",
+      "description": "Mario Gomez is a retired German professional footballer who played as a striker for several top clubs in Europe, including VfB Stuttgart, Bayern Munich, and Fiorentina. He was known for his clinical finishing, aerial ability, and physical strength, and was a key player for both his club and the Germany national team during his career.",
+      "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Mario_gomez.jpg/640px-Mario_gomez.jpg"
+    },
+    {
+      "id": 9,
+      "name": "Yaya Toure",
+      "club": "-",
+      "rate": 4.8,
+      "position": "CMF",
+      "allGoalUntilNow": 102,
+      "allAssistUntilNow": 70,
+      "activePlayer": "NO",
+      "description": "Yaya Toure is an Ivorian former professional footballer who played as a central midfielder for top clubs like Barcelona, Manchester City, and Olympiacos. He was known for his technical ability, physical strength, and tactical intelligence, and was widely regarded as one of the best midfielders of his generation.",
+      "photo": "https://s.hs-data.com/bilder/spieler/gross/18988.jpg"
+    },
+    {
+      "id": 10,
+      "name": "Alvaro Negredo",
+      "club": "Cadiz CF",
+      "rate": 4.6,
+      "position": "CF",
+      "allGoalUntilNow": 252,
+      "allAssistUntilNow": 86,
+      "activePlayer": "YES",
+      "description": "Alvaro Negredo is a retired Spanish professional footballer who played as a striker for several clubs in Spain and England, including Sevilla, Manchester City, and Middlesbrough. He was known for his powerful shots, aerial ability, and physical presence, and was a prolific scorer throughout his career.",
+      "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Alvaro_Negredo_MCFC.jpg/220px-Alvaro_Negredo_MCFC.jpg"
+    }
+  ]
+}
+

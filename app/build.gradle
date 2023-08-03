@@ -1,7 +1,13 @@
 plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
+    id 'kotlin-parcelize'
+    id 'kotlin-kapt'
+    id 'dagger.hilt.android.plugin'
+    id 'androidx.navigation.safeargs'
 }
+apply from: '../shared_dependencies.gradle'
+
 
 android {
     namespace 'com.fashionism.capstonesepakbola'
@@ -13,13 +19,14 @@ android {
         targetSdk 33
         versionCode 1
         versionName "1.0"
+        multiDexEnabled true
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
     buildTypes {
         release {
-            minifyEnabled false
+            minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
@@ -30,15 +37,24 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
+
+    buildFeatures {
+        viewBinding = true
+        dataBinding = true
+    }
+    dynamicFeatures = [':profile', ':favorite']
 }
 
 dependencies {
 
-    implementation 'androidx.core:core-ktx:1.7.0'
-    implementation 'androidx.appcompat:appcompat:1.6.1'
-    implementation 'com.google.android.material:material:1.9.0'
-    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
-    testImplementation 'junit:junit:4.13.2'
-    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+    implementation project(":core")
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    //navigation
+    //noinspection GradleDependency - not upgrade it because the plugin is not compatible with java 11
+    api 'androidx.navigation:navigation-fragment-ktx:2.5.2'
+    //noinspection GradleDependency - not upgrade it because the plugin is not compatible with java 11
+    api 'androidx.navigation:navigation-ui-ktx:2.5.2'
+    //noinspection GradleDependency - not upgrade it because the plugin is not compatible with java 11
+    api 'androidx.navigation:navigation-dynamic-features-fragment:2.5.2'
 }

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--suppress AndroidDomInspection, AndroidDomInspection -->
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.fashionism.capstonesepakbola.home.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_detailActivity"
+            app:destination="@id/detailActivity" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/favoriteFragment"
+        android:name="com.fashionism.favorite.FavoriteFragment"
+        android:label="Favorite"
+        tools:layout="@layout/fragment_favorite" >
+        <action
+            android:id="@+id/action_favoriteFragment_to_detailActivity"
+            app:destination="@id/detailActivity" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.fashionism.profile.ProfileFragment"
+        android:label="Profile"
+        tools:layout="@layout/fragment_profile" />
+
+    <activity
+        android:id="@+id/detailActivity"
+        android:name="com.fashionism.capstonesepakbola.detail.DetailActivity"
+        android:label="DetailActivity"
+        tools:layout="@layout/activity_detail" />
+
+    <fragment
+        android:id="@+id/settingFragment"
+        android:name="com.fashionism.capstonesepakbola.setting.SettingFragment"
+        android:label="More"
+        tools:layout="@layout/fragment_setting" />
+
+</navigation>

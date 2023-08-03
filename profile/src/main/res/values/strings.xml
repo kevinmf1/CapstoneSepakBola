@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="title_profile" translatable="false">Profile</string>
+    <string name="author_name" translatable="false">Kevin Malik Fajar</string>
+    <string name="email" translatable="false">kevinmalikfajar10@gmail.com</string>
+    <string name="profile_course" translatable="false">Submission Android Intermediate</string>
+</resources>
