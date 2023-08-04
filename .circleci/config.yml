@@ -23,6 +23,10 @@ jobs:
           paths:
             - ~/.android/build-cache
             - ~/.android/cache
+      # Tambahkan langkah untuk mengganti versi Gradle
+      - run:
+          name: Use Gradle 7.6
+          command: echo "distributionUrl=https\://services.gradle.org/distributions/gradle-7.6-all.zip" > gradle/wrapper/gradle-wrapper.properties
       - run:
           name: Run Build
           command: ./gradlew build
