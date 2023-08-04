@@ -25,10 +25,13 @@ android {
         buildConfigField "String", "HOSTNAME", "\"${properties.getProperty('HOSTNAME')}\""
     }
 
+    lintOptions {
+        disable 'IncludeLayoutParam', 'Orientation', 'UseAppTint'
+    }
+
     buildTypes {
         release {
             minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
     buildFeatures {
