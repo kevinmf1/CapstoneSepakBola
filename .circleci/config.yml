@@ -9,7 +9,7 @@ jobs:
   build:
     executor: android/android
     environment:
-      JVM: "adopt:11"
+      JVM: "adopt:17"
     steps:
       - checkout
       - restore_cache:
@@ -31,7 +31,7 @@ jobs:
           command: echo "distributionUrl=https\://services.gradle.org/distributions/gradle-7.6-all.zip" > gradle/wrapper/gradle-wrapper.properties
       - run:
           name: Run Build
-          command: ./gradlew build
+          command: ./gradlew build --warning-mode all
       - store_artifacts:
           path: app/build/reports
           destination: reports
