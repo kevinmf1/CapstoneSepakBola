@@ -5,6 +5,7 @@ plugins {
     id 'kotlin-kapt'
     id 'dagger.hilt.android.plugin'
     id 'androidx.navigation.safeargs'
+    id 'jacoco'
 }
 apply from: '../shared_dependencies.gradle'
 
@@ -24,6 +25,15 @@ android {
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
+    testOptions {
+        unitTests.all {
+            jacoco {
+                // Enable Jacoco for unit tests
+                includeNoLocationClasses = true
+            }
+        }
+    }
+
     buildTypes {
         release {
             minifyEnabled true
@@ -34,6 +44,7 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_11
         targetCompatibility JavaVersion.VERSION_11
@@ -52,6 +63,40 @@ android {
         dataBinding = true
     }
     dynamicFeatures = [':profile', ':favorite']
+}
+
+tasks.withType(Test) {
+    jacoco {
+        // Enable Jacoco for instrumented tests
+        includeNoLocationClasses = true
+    }
+}
+
+// Add Jacoco test report task
+task jacocoTestReport(type: JacocoReport, dependsOn: ['testDebugUnitTest', 'createDebugCoverageReport']) {
+    reports {
+        xml.enabled true
+        html.enabled true
+    }
+
+    // Set the source and class directories based on your project structure
+    def sourceDirs = [
+            'src/main/java',
+            'src/debug/java',
+            'src/test/java',
+            'src/androidTest/java'
+    ]
+
+    def classDirs = [
+            'build/intermediates/javac/debug/classes',
+            'build/intermediates/javac/debugUnitTest/classes',
+            'build/intermediates/javac/test/debug/classes',
+            'build/intermediates/javac/androidTest/debug/classes'
+    ]
+
+    sourceDirectories.setFrom(files(sourceDirs))
+    classDirectories.setFrom(files(classDirs))
+    executionData.setFrom(files('build/outputs/code_coverage/debugAndroidTest/connected/*.ec'))
 }
 
 dependencies {
