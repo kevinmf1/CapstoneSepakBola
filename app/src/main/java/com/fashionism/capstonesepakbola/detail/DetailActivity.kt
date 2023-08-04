@@ -11,7 +11,7 @@ import com.fashionism.core.domain.model.Player
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
-@Suppress("unused", "unused")
+@Suppress("unused", "unused", "DEPRECATION")
 class DetailActivity : AppCompatActivity() {
 
     private val detailViewModel: DetailViewModel by viewModels()

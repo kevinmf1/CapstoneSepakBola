@@ -4,6 +4,7 @@ import android.os.Parcelable
 import kotlinx.android.parcel.Parcelize
 
 @Parcelize
+@Suppress("DEPRECATED_ANNOTATION")
 data class Player(
     var idPlayer: Int,
     var name: String,

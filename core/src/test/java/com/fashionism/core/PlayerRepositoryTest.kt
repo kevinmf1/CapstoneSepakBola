@@ -21,7 +21,7 @@ import org.mockito.Mock
 import org.mockito.Mockito.`when`
 import org.mockito.junit.MockitoJUnitRunner
 
-@RunWith(MockitoJUnitRunner::class)
+@RunWith(MockitoJUnitRunner.Silent::class)
 class PlayerRepositoryTest {
 
 
@@ -48,6 +48,7 @@ class PlayerRepositoryTest {
         val flowList = flowOf(emptyList)
 
         `when`(localDataSource.getAllPlayer()).thenReturn(flowList)
+        //noinspection UnnecessaryStubbing
         `when`(remoteDataSource.getAllPlayer()).thenReturn(flowOf(APIResponse.Success(listOf())))
 
         // When
