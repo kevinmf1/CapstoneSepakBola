@@ -9,7 +9,7 @@ jobs:
   build:
     executor: android/android
     environment:
-      JVM: "adopt:17"
+      JVM: "adopt:11"
     steps:
       - checkout
       - restore_cache:
