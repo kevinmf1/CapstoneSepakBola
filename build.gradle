@@ -14,7 +14,6 @@ buildscript {
         classpath 'com.google.dagger:hilt-android-gradle-plugin:2.44'
         //noinspection GradleDependency - not upgrade it because the plugin is not compatible with java 11
         classpath "androidx.navigation:navigation-safe-args-gradle-plugin:2.5.2"
-        classpath "org.jacoco:org.jacoco.core:0.8.7" // Add the Jacoco plugin
     }
 }
 

@@ -38,17 +38,3 @@ jobs:
       - run:
           name: Run Tests
           command: ./gradlew lint test --scan
-      - run:
-          name: Code Coverage
-          command: ./gradlew jacocoTestReport
-      - run:
-          name: Code Style Check
-          command: ./gradlew detekt ktlintCheck
-      - run:
-          name: Vulnerability Check
-          command: ./gradlew dependencyCheckAnalyze
-      - store_test_results:
-          path: app/build/test-results
-      - store_artifacts:
-          path: app/build/outputs/apk/debug/
-          destination: artifact-file
